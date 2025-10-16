@@ -1,0 +1,161 @@
+/* --- 基本样式 --- */
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #fdfdfd;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    color: #0056b3; /* A classic academic blue */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, h3 {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    color: #2c3e50;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-top: 40px;
+}
+
+/* --- 导航栏 --- */
+header {
+    background: #ffffff;
+    border-bottom: 1px solid #ddd;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-brand {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #555;
+    font-size: 1.1em;
+}
+
+nav ul li a.active {
+    color: #0056b3;
+    font-weight: bold;
+}
+
+/* --- 主体内容 --- */
+main {
+    padding: 20px 0;
+}
+
+/* --- 个人信息区域 --- */
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 30px;
+    border: 3px solid #eee;
+}
+
+.profile-info h1 {
+    margin: 0;
+    border-bottom: none;
+    font-size: 2.2em;
+}
+
+.profile-info p {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+/* --- 列表样式 --- */
+.publications-list li, .talks-list li {
+    margin-bottom: 20px;
+}
+
+.paper-title {
+    font-weight: bold;
+}
+
+.links ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.links ul li {
+    margin-bottom: 10px;
+}
+
+
+/* --- 页脚 --- */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    border-top: 1px solid #eee;
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* --- 响应式设计 --- */
+@media (max-width: 600px) {
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-pic {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    nav .container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        margin-top: 15px;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+}
